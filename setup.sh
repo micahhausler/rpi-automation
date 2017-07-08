@@ -1,15 +1,6 @@
 #/usr/bin/env bash
 
-sudo apt-get install -y \
-    curl \
-    git \
-    htop \
-    jq \
-    less \
-    man \
-    vim \
-    wget \
-    x11-apps
-
-curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker pi
+# Execute all setup scripts
+for f in ./setup.d/*; do
+    bash $f;
+done
