@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install development tools
-
+sudo apt-get update
 sudo apt-get install -y \
     conntrack \
     curl \

@@ -1,5 +1,26 @@
 # RaspberryPi Automation Setup
 
+The purpose of this repo is to have an automated way to setup a RaspberryPi
+just the way I want. Things I like:
+
+* [Go](https://golang.org/)
+* [Docker](https://www.docker.com/)
+* [Kubernetes](https://kubernetes.io/)
+* [etcd](https://coreos.com/etcd)
+* [cfssl](https://github.com/cloudflare/cfssl)
+
+Most of the technologies above are _not_ pre-built for `arm` architectures, so
+this repository is intended to help ease the setup and installation of those
+technologies on a RaspberryPi.
+
+## Use
+
+```bash
+git clone https://github.com/micahhausler/rpi-automation.git
+cd rpi-automation
+./setup.sh
+```
+
 ## Configuration
 
 * `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys (defaults to `micahhausler`)
