@@ -9,11 +9,11 @@ if [ ! -f /usr/bin/dockerd ]; then
 fi
 
 # Modify systemd unit
-sudo cp ../systemd.d/docker.service /lib/systemd/system/docker.service
+sudo cp ./systemd.d/docker.service /lib/systemd/system/docker.service
 
 # Add drop-in
 sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo cp ../systemd.d/10-docker.conf /etc/systemd/system/docker.service.d/
+sudo cp ./systemd.d/10-docker.conf /etc/systemd/system/docker.service.d/
 
 # Restart docker
 sudo systemctl daemon-reload
