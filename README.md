@@ -41,6 +41,7 @@ Things to automate:
 
 - [x] run docker with `--experimental --metrics-addr 127.0.0.1:9000`
 - [x] rewrite docker systemd to accept drop-ins
+- [ ] Mount docker to alternative volume
 
 ## Prometheus
 
