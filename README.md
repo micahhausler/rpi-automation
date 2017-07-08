@@ -3,7 +3,7 @@
 ## Configuration
 
 * `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys (defaults to `micahhausler`)
-* `GO_VERSION` - The go version to install (defaults to ``1.8.3`)
+* `GO_VERSION` - The go version to install (defaults to `1.8.3`)
 
 ## Installs
 
