@@ -2,6 +2,7 @@
 
 ## Downloads a Github user's SSH keys and sets them to ~/.ssh/authorized_keys
 
+# TODO: Prompt for username if none is set, remove micahhausler
 GITHUB_USERNAME="${GITHUB_USERNAME:-micahhausler}"
 
 if [ -n "$GITHUB_USERNAME" ]; then

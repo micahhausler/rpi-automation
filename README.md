@@ -1,19 +1,20 @@
-# RaspberryPi
+# RaspberryPi Automation Setup
 
 ## Configuration
 
-* `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys for
+* `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys (defaults to `micahhausler`)
+* `GO_VERSION` - The go version to install (defaults to ``1.8.3`)
 
 ## Installs
 
 Things to automate:
 
 - [ ] passwd reset
+- [ ] dotfiles
 - [x] ssh key setup (from github?)
 - [x] pkg installs
 - [x] [Go install](https://golang.org/doc/install/source)
 - [x] Docker install
-- [ ] dotfiles
 
 ## Customizations
 
