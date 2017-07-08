@@ -1,17 +1,22 @@
 # RaspberryPi
 
-Things to automate:
+## Configuration
+
+* `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys for
 
 ## Installs
 
+Things to automate:
+
 - [ ] passwd reset
-- [ ] ssh key setup (from github?)
-- [x]  pkg installs
+- [x] ssh key setup (from github?)
+- [x] pkg installs
 - [x] [Go install](https://golang.org/doc/install/source)
 - [x] Docker install
 - [ ] dotfiles
 
 ## Customizations
+
 - [ ] run docker with `--experimental --metrics-addr 127.0.0.1:9000`
 - [ ] rewrite docker systemd to accept drop-ins
 
@@ -28,6 +33,12 @@ Things to automate:
 - [ ] upload ARM binaries to s3
 - [ ] `sudo genman /usr/share/man/man1/ kube*`
 - [ ] `kubectl completion bash > /etc/bash_completion.d/kubectl`
+
+## Other resources
+
+- [ ] CFSSL created CA
+- [ ] CFSSL Server
+- [ ] etcd v3 server
 
 ## About this repo
 
