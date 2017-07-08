@@ -17,8 +17,8 @@ Things to automate:
 
 ## Customizations
 
-- [ ] run docker with `--experimental --metrics-addr 127.0.0.1:9000`
-- [ ] rewrite docker systemd to accept drop-ins
+- [x] run docker with `--experimental --metrics-addr 127.0.0.1:9000`
+- [x] rewrite docker systemd to accept drop-ins
 
 ## Prometheus
 
