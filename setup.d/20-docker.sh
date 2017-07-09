@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Install the docker daemon
+
+if [ "$INSTALL_DOCKER" != "true" ]; then
+    exit;
+fi
+
 if [ ! -f /usr/bin/dockerd ]; then
     # Install Docker
     curl -sSL https://get.docker.com | sh

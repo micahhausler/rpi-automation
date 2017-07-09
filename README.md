@@ -23,7 +23,9 @@ cd rpi-automation
 
 ## Configuration
 
-* `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys (defaults to `micahhausler`)
+* `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys. Omitting this env var will not fetch any keys.
+* `INSTALL_DOCKER` - Whether to install docker. Any other value besides 'true' will skip the install (defaults to 'true')
+* `INSTALL_GO` - Whether to install Go. Any other value besides 'true' will skip the install (defaults to 'true')
 * `GO_VERSION` - The go version to install (defaults to `1.8.3`)
 
 ## Installs

@@ -2,6 +2,10 @@
 
 # Install the Go language
 
+if [ "$INSTALL_GO" != "true" ]; then
+    exit;
+fi
+
 GO_VERSION="${GO_VERSION:-1.8.3}"
 OS="linux"
 ARCH="armv6l"
