@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ser -e
+
 echo "Found the following disks:"
 ls  /dev/sd*[a-z]
 
@@ -21,7 +23,7 @@ case $yn in
     [Yy]* )
         read -p "What drectory to mount? " directory
         if [ ! -d $directory ]; then
-            sudo mkdir -p $DIRECTORY
+            sudo mkdir -p $directory
         fi
         sudo mount $DISK $directory
         df -h $DISK
