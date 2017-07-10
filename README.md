@@ -27,6 +27,9 @@ cd rpi-automation
 * `INSTALL_DOCKER` - Whether to install docker. Any other value besides 'true' will skip the install (defaults to 'true')
 * `INSTALL_GO` - Whether to install Go. Any other value besides 'true' will skip the install (defaults to 'true')
 * `GO_VERSION` - The go version to install (defaults to `1.8.3`)
+* `INSTALL_HW_CLOCK` - Whether to install a hardware clock. Any other value besides 'true' will skip the install (defaults to 'true')
+* `HW_CLOCK_MODEL` - The model of hardware clock. (defaults to `pcf8523`)
+* `SYNC_HW_CLOCK` - Whether to sync a hardware clock. Any other value besides 'true' will skip the sync (defaults to 'true')
 
 ## Installs
 
