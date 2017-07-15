@@ -8,7 +8,6 @@ export HW_CLOCK_MODEL="${HW_CLOCK_MODEL:-pcf8523}"
 export SYNC_HW_CLOCK="${SYNC_HW_CLOCK:-true}"
 
 # Execute all setup scripts
-#for f in ./setup.d/*; do
-for f in ./setup2/*; do
+for f in ./setup.d/*; do
     bash $f;
 done
