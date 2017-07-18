@@ -47,17 +47,18 @@ append_to_boot_file "dtoverlay=i2c-rtc,${HW_CLOCK_MODEL}"
 # If fake-hwclock is still installed, reboot
 
 FAKE_HW=$(apt list --installed | grep -v "deinstall" | grep -c fake-hwclock)
-if [ "$FAKE_HW" == "1" ]; then
-    echo "Must reboot to use clock!"
-    sudo shutdown -r +1
-    exit
-fi
 
 # Remove fake HW clock
 sudo apt-get -y remove fake-hwclock
 sudo update-rc.d -f fake-hwclock remove
 
-sudo cp ./50-clock.d/hwclock-set /lib/udev/hwclock-set
+sudo cp ./setup.d/50-clock.d/hwclock-set /lib/udev/hwclock-set
+
+if [ "$FAKE_HW" == "0" ]; then
+    echo "Must reboot to use clock!"
+    sudo shutdown -r +1
+    exit
+fi
 
 # Read what the clock says
 sudo hwclock -D -r
