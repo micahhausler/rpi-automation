@@ -34,7 +34,7 @@ append_to_boot_file() {
     BOOT_FILE="/boot/config.txt"
     line=$1
     if [ -f $BOOT_FILE ]; then
-        if [ "$(cat $BOOT_FILE | grep -v "^#" | grep -c '$line')" == "0" ]; then
+        if [ "$(cat $BOOT_FILE | grep -v "^#" | grep -c $line)" == "0" ]; then
             echo "$line" | sudo tee -a $BOOT_FILE
         fi
     fi
