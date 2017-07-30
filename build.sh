@@ -12,7 +12,7 @@ set -e
 export S3_BUCKET="${S3_BUCKET:-micahhausler-uploads}"
 export AWS_DEFAULT_PROFILE=personal
 export AWS_DEFAULT_REGION="us-west-2"
-export GOPATH="~/go"
+export GOPATH="$HOME/go"
 
 ARCH="armv7l"
 OS="Linux"
