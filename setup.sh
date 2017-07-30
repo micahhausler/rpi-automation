@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export INSTALL_PYTHON="${INSTALL_PYTHON:-true}"
 export GITHUB_USERNAME="${GITHUB_USERNAME:-}"
 export INSTALL_DOCKER="${INSTALL_DOCKER:-true}"
 export INSTALL_GO="${INSTALL_GO:-true}"

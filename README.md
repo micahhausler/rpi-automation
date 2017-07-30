@@ -23,6 +23,8 @@ cd rpi-automation
 
 ## Configuration
 
+* `INSTALL_PYTHON` - Whether to install python. Any other value besides 'true' will skip the install (defaults to 'true')
+* `PYTHON_VERSION` - The python version to install (defaults to `3.6.2`)
 * `GITHUB_USERNAME` - The username of the github user to fetch the SSH keys. Omitting this env var will not fetch any keys.
 * `INSTALL_DOCKER` - Whether to install docker. Any other value besides 'true' will skip the install (defaults to 'true')
 * `INSTALL_GO` - Whether to install Go. Any other value besides 'true' will skip the install (defaults to 'true')
