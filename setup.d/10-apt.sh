@@ -9,6 +9,7 @@ sudo apt-get install -y \
     htop \
     jq \
     less \
+    lsof \
     man \
     socat \
     vim \
