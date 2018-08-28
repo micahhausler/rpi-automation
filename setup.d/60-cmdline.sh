@@ -2,6 +2,8 @@
 
 set -e
 
-FILE="/boot/cmdline.txt"
+BOOT_FILE="/boot/cmdline.txt"
 
-echo "dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=PARTUUID=a2bed435-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait cgroup_enable=cpuset cgroup_enable=memory" | sudo tee $FILE
+if [ "$(grep -c cgroup_enable $BOOT_FILE)" == "0" ]; then
+    sudo sed -i -e "s/rootwait/rootwait cgroup_enable=cpuset cgroup_enable=memory/" $FILE
+fi
