@@ -10,5 +10,8 @@ export SYNC_HW_CLOCK="${SYNC_HW_CLOCK:-true}"
 
 # Execute all setup scripts
 for f in ./setup.d/*; do
-    bash $f;
+    filetype=$(stat  -c %F $f)
+    if [ "$filetype" == "regular file" ]; then
+        bash $f;
+    fi
 done
